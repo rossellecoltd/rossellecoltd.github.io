@@ -1,0 +1,13 @@
+.company-footer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(181, 217, 238, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-rights {
+    font-size: 1.4vw;
+    font-family: Roboto;
+}

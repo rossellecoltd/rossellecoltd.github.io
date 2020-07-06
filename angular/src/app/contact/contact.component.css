@@ -1,0 +1,41 @@
+.contact-header {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.contact-header h1 {
+    font-family: Roboto;
+    color: rgb(100, 100, 100);
+    font-size: 3vw;
+}
+
+mat-icon {
+    font-size: 50px;
+    display: inline;
+    color: darkblue;
+}
+
+.contact-detail-container div {
+    margin-left: 12%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+.contact-detail-container h2, p {
+    display: inline;
+    font-family: Roboto;
+    color: rgb(125, 125, 125);
+    font-size: 2vw;
+}
+
+/* .company-info p {
+    color: rgb(120, 120, 120);
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 2.4;
+} */

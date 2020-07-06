@@ -1,0 +1,86 @@
+.products-container {
+    width: inherit;
+    height: inherit;
+    /* background-image: url("src/assets/algae.jpg");
+    background-size: 100%;
+    opacity: 0.7; */
+}
+
+.pga {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    background-color: white;
+    /* min-width: 700px; */
+    /* border-width: 10px solid transparent;
+    border-radius: 1em;
+    border-image: radial-gradient(white, green); */
+}
+
+.pga-header {
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.pga-header h1 {
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+    font-size: 2.5vw;
+}
+
+.pga-detail {
+    width: inherit;
+    height: inherit;
+}
+
+.pga-img-left {
+    float: left;
+    width: 22vw;
+    height: auto;
+    margin-right: 7%;
+}
+
+.pga-img-right {
+    float: right;
+    width: 22vw;
+    height: auto;
+    margin-left: 7%;
+}
+
+.pga-img-left img {
+    width: 100%;
+    height: auto;
+}
+
+.pga-img-right img {
+    width: 100%;
+    height: auto;
+}
+
+.pga-description {
+    font-size: 1.5vw;
+    line-height: 2.1;
+    color: rgb(125, 125, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pga-section {
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+/* .contact-us {
+    width: 100%;
+}
+
+.contact-us button {
+    font-family: Roboto;
+    font-size: 1.5em;
+    height: 70px;
+    width: 300px;
+    background-color: rgba(122, 200, 222, 0.89);
+    
+} */
