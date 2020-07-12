@@ -10,7 +10,7 @@
 .contact-header h1 {
     font-family: Roboto;
     color: rgb(100, 100, 100);
-    font-size: 3vw;
+    font-size: 3vh;
 }
 
 mat-icon {
@@ -29,7 +29,7 @@ mat-icon {
     display: inline;
     font-family: Roboto;
     color: rgb(125, 125, 125);
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 /* .company-info p {
