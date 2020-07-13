@@ -1,0 +1,3 @@
+#!/usr/local/bin/bash
+
+rm -rf 3rdpartylicenses.txt assets/ favicon.ico index.html *.js *.css
