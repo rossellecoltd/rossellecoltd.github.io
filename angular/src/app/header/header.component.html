@@ -2,12 +2,20 @@
   <div class="logo-head-container">
     <div class="logo-container">
       <a routerLink="/">
-        <img src="../../assets/rosselle.svg">
+        <img src="../../assets/rosselle.svg" alt="rosselle-logo">
       </a>
     </div>
 
     <span class="fill-space"></span>
     <span flex></span>
+
+    <div class="language-icons-container">
+      <!-- PLACE LANGUAGE ICONS HERE -->
+      <img src="../../assets/us.svg" alt="en-us" (click)="changeLanguage('en')">
+    </div>
+    <div class="language-icons-container">
+      <img src="../../assets/thailand.svg" alt="th-th" (click)="changeLanguage('th')">
+    </div>
 
     <div class="linked-icon-container">
       <a href="https://www.linkedin.com/company/rosselle" target="_blank">
@@ -26,11 +34,12 @@
 <div class="nav-bar">
   <mat-toolbar id="nav-toolbar">
     <div class="nav-toolbar-but-container">
-      <button mat-button routerLink="products">
-        Products
-      </button>
-      <button mat-button routerLink="about">About</button>
-      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);">Contact</button>
+      <button mat-button routerLink="products" *ngIf="language === 'en'">Products</button>
+      <button mat-button routerLink="about" *ngIf="language === 'en'">About</button>
+      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);" *ngIf="language === 'en'">Contact</button>
+      <button mat-button routerLink="products" *ngIf="language === 'th'">สินค้า</button>
+      <button mat-button routerLink="about" *ngIf="language === 'th'">เกี่ยวกับบริษัท</button>
+      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);" *ngIf="language === 'th'">ติดต่อ</button>
     </div>
   </mat-toolbar>
 </div>

@@ -41,6 +41,14 @@ button {
     padding-right: 2vw;
 }
 
+.language-icons-container {
+    height: auto;
+    width: 4vh;
+    margin: auto;
+    padding-top: 0.5vh;
+    padding-right: 2vw;
+}
+
 .logo-container img {
     padding: 14% 0%;
     height: 72%;

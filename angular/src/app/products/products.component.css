@@ -72,15 +72,21 @@
     margin-bottom: 5%;
 }
 
-/* .contact-us {
+.contact-us {
     width: 100%;
 }
 
 .contact-us button {
-    font-family: Roboto;
-    font-size: 1.5em;
-    height: 70px;
-    width: 300px;
+    font-size: 3vh;
+    height: 8vh;
+    line-height: 8vh;
+    width: 30vw;
+    min-width: 170px;
     background-color: rgba(122, 200, 222, 0.89);
-    
-} */
+}
+
+.contact-us button mat-icon {
+    width: inherit;
+    height: inherit;
+    font-size: 3vh;
+}

@@ -11,25 +11,35 @@
                 <div class="pga-img-left">
                     <img src="../../assets/algae.jpg">
                 </div>
-                <div class="pga-description">
+                <div class="pga-description" *ngIf="language === 'en'">
                     Propylene Glycol Alginate (PGA) is formed through an esterification of alginic acid with propylele
                     glycol groups. It is soluble in both hot and cold water resulting in viscous solutions.
+                </div>
+                <div class="pga-description" *ngIf="language === 'th'">
+                    Propylene Glycol Alginate (PGA) เกิดจากกระบวนการ esterification ของ กรด alginic กับ หมู่ propylele
+                    glycol <br/> PGA ละลายได้ในน้ำร้อนและน้ำเย็น เมื่อละลายแล้วจะเกิดสารละลายที่ข้นเหนียว
                 </div>
             </div>
             <div class="pga-detail-thicken pga-section">
                 <div class="pga-img-right">
                     <img src="../../assets/thickening.jpg">
                 </div>
-                <div class="pga-description">
+                <div class="pga-description" *ngIf="language === 'en'">
                     PGA and Sodium Alginate are often compared as they share common applications. Sodium Alginate has limitations in some circumstances. It becomes insoluble at low pH or at high concentrations of calcium, rendering it to be unsuitable for thickening or stabilizing foods such as fruit drinks, dressings, and calcium-rich dairy products. PGA can be perfectly used in those areas.
+                </div>
+                <div class="pga-description"*ngIf="language === 'th'">
+                    PGA และ Sodium Alginate มีลักษณะการประยุกต์ใช้คล้ายคลึงกันแต่ Sodium Alginate มีข้อจำกัดหลายประการ Sodium Alginate ไม่สามารถละลายได้ในสภาพแวดล้อมที่ pH ต่ำ หรือความเข้มข้นของ Calcium สูง ส่งผลให้ Sodium Alginate ไม่เหมาะสมสำหรับการเพิ่มความหนืดในบางสภาพแวดล้อม อาทิ น้ำผลไม้ น้ำสลัด และ ผลิตภัณฑ์นมที่มี Calcium สูง PGA ไม่มีข้อจำกัดดังกล่าวทำให้สามารถประยุกต์ใช้ได้อย่างมีประสิทธิภาพ
                 </div>
             </div>
             <div class="pga-detail-foam pga-section">
                 <div class="pga-img-left">
                     <img src="../../assets/beer_foam.jpg">
                 </div>
-                <div class="pga-description">
+                <div class="pga-description" *ngIf="language === 'en'">
                     PGA has one unique usage as a foam stabilizer in beer. Only a small concentration of PGA adding to beer maintain a fine foam when pouring into a glass.
+                </div>
+                <div class="pga-description" *ngIf="language === 'th'">
+                    หนึ่งในการประยุกต์ใช้ที่โดดเด่นและเป็นเอกลักษณ์ของ PGA คือการเพิ่มความคงตัวของโฟมเบียร์ โดยการใส่ PGA ในปริมาณเพียงเล็กน้อยสามารถทำให้โฟมเบียร์มีความคงตัวเมื่อรินใส่แก้ว
                 </div>
             </div>
             <div class="pga-detail-noodle-bread pga-section">
@@ -37,13 +47,17 @@
                     <img src="../../assets/noodle.jpg">
                     <img src="../../assets/bread.jpg">
                 </div>
-                <div class="pga-description" style="padding-top: 15%;">
-                    PGA can also be used in bread and noodles to improve texture. Adding PGA to bread dough can result in volume increase and improve elasticity.
+                <div class="pga-description" style="padding-top: 15%;" *ngIf="language === 'en'">
+                    In additon, PGA can also be used in bread and noodles to improve texture. Adding PGA to bread dough can result in volume increase and improve elasticity.
+                </div>
+                <div class="pga-description" style="padding-top: 15%;" *ngIf="language === 'th'">
+                    นอกจากที่กล่าวมาข้างต้น PGA ยังสามารถประยุกต์ใช้ในขนมปังและเส้นบะหมี่ PGA ช่วยให้ขนมปังมีปริมาตรเพิ่มขึ้นและช่วยในเรื่องของความยืดหยุ่น PGA ยังช่วยให้เส้นบะหมี่มีความนุ่มเหนียวไม่อืดน้ำและสามารถรักษาสภาพเส้นและเนื้อสัมผัสเมื่อถูกความเย็นหรือแช่แข็ง
                 </div>
             </div>
-            <!-- <div class="contact-us pga-section">
-                <button mat-button color="primary" routerLink="contact">Contact Us <mat-icon>keyboard_arrow_right</mat-icon></button>
-            </div> -->
+            <div class="contact-us pga-section">
+                <button mat-button routerLink="/contact" *ngIf="language === 'en'">Contact Us <mat-icon>keyboard_arrow_right</mat-icon></button>
+                <button mat-button routerLink="/contact" *ngIf="language === 'th'">ติดต่อเรา <mat-icon>keyboard_arrow_right</mat-icon></button>
+            </div>
         </div>
     </div>
 </div>

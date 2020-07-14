@@ -1,16 +1,19 @@
 <div class="company-name-container">
     <div class="company-name">
-        <h1 class="mat-h1">Rosselle Co., Ltd. Thailand</h1>
+        <h1 class="mat-h1" *ngIf="language === 'en'">Rosselle Co., Ltd. Thailand</h1>
+        <h1 class="mat-h1" *ngIf="language === 'th'">บริษัท โรสเซลล์ จำกัด ประเทศไทย</h1>
     </div>
 </div>
 <div class="company-info-container">
     <div class="company-info">
-        <p>Rosselle is a Propylene Glycol Alginate (PGA) importer in Thailand with competitive price and exceptional quality. Our supplier is KIMICA Corporation (Japan) who is an worldwide supplier of alginate.</p>
-        <p>Established in 2004, Rosselle has been the importer of food additives to meet the demand of extensively growing food industry in Thailand. Starting from flavors, Rosselle continuously develops and fine tune our product lines to ensure that our customers's needs will be satisfied. With more than 15 years of experience, Rosselle has imported various food additives, Tapioca Starch, Vital Wheat Gluten, and Propylene Glycol Alginate (PGA), to name a few. All of our products are certified food grade with other certifications such as Halal and ISO availavle depending on each product. Currently, we are offering Propylene Glycol Alginate (PGA) as the only product in our portfolio and we have partnered with KIMICA Corporation (Japan) who is an worldwide supplier of alginate. Here at Rosselle, we take it crucial to serve our customers with the good quality products from the best-in-class suppliers.</p>
+        <p *ngIf="language === 'en'">Rosselle is a Propylene Glycol Alginate (PGA) importer in Thailand with competitive price and exceptional quality. Our supplier is KIMICA Corporation (Japan) who is an worldwide supplier of alginate.</p>
+        <p *ngIf="language === 'en'">Established in 2004, Rosselle has been the importer of food additives to meet the demand of extensively growing food industry in Thailand. Starting from flavors, Rosselle continuously develops and fine tune our product lines to ensure that our customers's needs will be satisfied. With more than 15 years of experience, Rosselle has imported various food additives, Tapioca Starch, Vital Wheat Gluten, and Propylene Glycol Alginate (PGA), to name a few. All of our products are certified food grade with other certifications such as Halal and ISO availavle depending on each product. Currently, we are offering Propylene Glycol Alginate (PGA) as the and we have partnered with KIMICA Corporation (Japan) who is an worldwide supplier of alginate. Here at Rosselle, we take it crucial to serve our customers with the good quality products from the best-in-class suppliers.</p>
+        <p *ngIf="language === 'th'">โรสเซลล์ เป็นผู้นำเข้าและจำหน่าย Propylene Glycol Alginate (PGA) ในประเทศไทยจากผู้ผลิตชั้นนำด้าน Alginate ของโลก KIMICA Corporation ประเทศญี่ปุ่น</p>
+        <p *ngIf="language === 'th'">บริษัท โรสเซลล์ จำกัด ก่อตั้งเมื่อปี พ.ศ. 2547 เป็นผู้นำเข้าวัตถุเจือปนอาหารเพื่อตอบสนองความต้องการที่เพิ่มขึ้นอย่างก้าวกระโดดของผู้ผลิตอาหารในประเทศไทย โรสเซลล์ไม่หยุดพัฒนาตัวเลือกสินค้าของเราและปรับเปลี่ยนไปตามความต้องการของตลาดเพื่อความพึงพอใจสูงสุดของลูกค้า มากกว่า 15 ปีที่ดำเนินกิจการมา เราได้นำเข้าสินค้าหลายประเภท อาทิ กลิ่น Tapioca Starch, Vital Wheat Gluten, และ Propylene Glycol Alginate (PGA) สินค้าทุกประเภทที่เรานำเข้ามาผ่านมาตรฐานฟู้ดเกรด (Food Grade) และได้รับมาตรฐานอื่นๆเช่น Halal หรือ ISO ขึ้นอยู่กับแต่ละประเภทสินค้า ปัจจุบัน โรสเซลล์ จำหน่าย Propylene Glycol Alginate (PGA) ซึ่งผลิตโดยผู้เชี่ยวชาญด้าน Alginate ระดับโลก KIMICAP Corporation ประเทศญี่ปุ่น โรสเซลล์ให้ความสำคัญอย่างสูงสุดเสมอมาเกี่ยวกับคุณภาพของสินค้าที่เรานำเข้าและผู้ผลิตเพื่อให้มันใจว่าลูกค้าของเราจะได้รับความพึงพอใจสูงสุด</p>
     </div>
 </div>
 <div class="company-detail-container">
-    <table class="company-detail-table">
+    <table class="company-detail-table" *ngIf="language === 'en'">
         <tbody>
             <tr>
                 <td>Name</td>
@@ -32,9 +35,37 @@
 
             </tr>
             <tr>
-                <td>Office</td>
+                <td>Head Office</td>
                 <td>111/63, Mu 7, Bang Phai, Bang Khae, Bangkok, 10160, Thailand</td>
             </tr>
         </tbody>
     </table>
+    <table class="company-detail-table" *ngIf="language === 'th'">
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>บริษัท โรสเซลล์ จำกัด</td>
+            </tr>
+            <tr>
+                <td>ก่อตั้ง</td>
+                <td>พฤษภาคม พ.ศ. 2547</td>
+            </tr>
+            <tr>
+                <td>ประธานกรรมการบริหาร</td>
+                <td>อนงค์นุช วลัยพัชรา</td>
+            </tr>
+            <tr>
+                <td>ทุนจดทะเบียน</td>
+                <td>1,000,000 บาท</td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>สำนักงานใหญ่</td>
+                <td>111/63 หมู่ 7 แขวง บางไผ่ เขต บางแค กรุทเทพฯ 10160</td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>

@@ -1,16 +1,18 @@
 <div class="contact-header-container">
     <div class="contact-header">
-        <h1>Contact Us</h1>
+        <h1 *ngIf="language === 'en'">Contact Us</h1>
+        <h1 *ngIf="language === 'th'">ติดต่อเรา</h1>
     </div>
 </div>
 <div class="contact-detail-container">
     <div class="contact-detail-phone">
         <a href="tel:+6624104043">
-        <div class="phone-icon">
-            <mat-icon>phone</mat-icon>
-        </div>
-        <div class="phone-detail">
-                <h2>+662 410-4043 (9:00 - 16:30 Mon-Fri Thailand Standard Time)</h2>
+            <div class="phone-icon">
+                <mat-icon>phone</mat-icon>
+            </div>
+            <div class="phone-detail" >
+                <h2 *ngIf="language === 'en'">+662 410-4043 (9:00 - 16:30 Mon-Fri Thailand Standard Time)</h2>
+                <h2 *ngIf="language === 'th'">02 410-4043 (9:00 - 16:30 จันทร์ - ศุกร์)</h2>
             </div>
         </a>
     </div>
@@ -26,7 +28,8 @@
     </div>
     <div class="contact-detail-footer">
         <div class="footer-detail">
-            <p>Do not hestitate to reach out for more detail regarding our products</p>
+            <p *ngIf="language === 'en'">Do not hestitate to reach out for more detail regarding our products</p>
+            <p *ngIf="language === 'th'">พวกเราพร้อมและยินดีที่จะให้คำปรึกษาหรือคำแนะนำเพิ่มเติมเกี่ยวกับสินค้าของเรา</p>
         </div>
     </div>
 </div>
