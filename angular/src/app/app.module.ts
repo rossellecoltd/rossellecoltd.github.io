@@ -13,7 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+// import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { HomeComponent } from './home/home.component';
     ProductsComponent,
     FooterComponent,
     HeaderComponent,
-    HomeComponent,
+    // HomeComponent,
   ],
   imports: [
     BrowserModule,
