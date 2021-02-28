@@ -42,6 +42,15 @@
                     หนึ่งในการประยุกต์ใช้ที่โดดเด่นและเป็นเอกลักษณ์ของ PGA คือการเพิ่มความคงตัวของโฟมเบียร์ โดยการใส่ PGA ในปริมาณเพียงเล็กน้อยสามารถทำให้โฟมเบียร์มีความคงตัวเมื่อรินใส่แก้ว
                 </div>
             </div>
+            <div class="carousel-container">
+                <ngb-carousel *ngIf="product_carousel_images">
+                    <ng-template ngbSlide *ngFor="let image of product_carousel_images">
+                        <div class="carousel-img-container">
+                            <img [src]="image.url" [alt]="image.alt_text">
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
             <div class="pga-detail-noodle-bread pga-section">
                 <div class="pga-img-right">
                     <img src="../../assets/noodle.jpg">
