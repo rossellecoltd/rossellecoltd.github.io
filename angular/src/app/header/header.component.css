@@ -28,14 +28,27 @@ button {
 }
 
 .logo-container {
-    padding: 0% 11%;
+    padding: 0% 3%;
     height: 100%;
     margin: auto;
 }
 
-.linked-icon-container {
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: bolder;
+    color: rgb(151, 71, 71);
+    font-size: 4vh;
+    vertical-align: middle;
+    margin: auto;
+    line-height: 8vh;
+}
+
+.linkedin-icon-container {
     height: auto;
-    width: 6vh;
+    width: 7vh;
     margin: auto;
     padding-top: 0.5vh;
     padding-right: 2vw;
@@ -43,15 +56,15 @@ button {
 
 .language-icons-container {
     height: auto;
-    width: 4vh;
+    width: 7vh;
     margin: auto;
     padding-top: 0.5vh;
     padding-right: 2vw;
 }
 
 .logo-container img {
-    padding: 14% 0%;
-    height: 72%;
+    padding: 16% 0%;
+    height: 100%;
     width: auto;
 }
 
@@ -61,12 +74,9 @@ button {
 
 .nav-bar {
     position: fixed;
-    /* top: 70px; */
     top: 8vh;
     width: 100%;
     height: 6vh;
-    /* min-height: 40px;
-    max-height: 55px; */
     background-color: white;
 }
 
