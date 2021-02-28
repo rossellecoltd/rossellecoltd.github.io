@@ -26,6 +26,10 @@ export class ProductsComponent implements OnInit {
       alt_text: 'noodle1'
     },
     {
+      url: '../../assets/carousel/product/noodle2.jpg',
+      alt_text: 'noodle2'
+    },
+    {
       url: '../../assets/carousel/product/bread1.jpg',
       alt_text: 'bread1'
     },

@@ -88,10 +88,14 @@ ngb-carousel {
     height: 33.75vw;
     width: 60vw;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 ngb-carousel .carousel-img-container>img {
     height: 33.75vw;
     width: 60vw;
+}
+
+@media screen and (max-width: 600px) { 
+    .pga-section img { display: none; }  
 }
