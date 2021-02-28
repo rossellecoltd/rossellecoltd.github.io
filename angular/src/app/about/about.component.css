@@ -32,7 +32,7 @@
     margin-right: 20%;
     margin-top: 3%;
     font-family: Roboto;
-    font-size: 1.5vh;
+    font-size: 1.7vh;
 }
 
 .company-detail-table tr td {
@@ -41,19 +41,12 @@
 }
 
 .company-detail-table tr {
-    /* border-top: 1px solid #a4abb3; */
     border-bottom: 1px solid #a4abb3;
     width: 100%;
     height: 5%;
 }
 
-.company-detail-table tr:first-child {
-    /* border-top: 1px solid #a4abb3;
-    border-bottom: 1px solid #a4abb3; */
-}
-
 .company-detail-table tr td:first-child {
-    /* border-top: 1px solid #a4abb3; */
     margin-bottom: 1px;
     border-bottom: 1px solid #a4abb3;
     width: 15%;
@@ -64,11 +57,24 @@
 }
 
 .company-detail-table tr td:last-child {
-    /* border-top: 1px solid #a4abb3; */
     border-bottom: 1px solid #a4abb3;
     width: 30%;
     max-width: 700px;
     min-width: 100px;
     background-color: white;
     text-align: center;
+}
+
+ngb-carousel {
+    height: 35vw;
+    width: 46vw;
+    margin-top: 5%;
+    margin-left: 27.05%;
+    margin-bottom: 5%;
+}
+
+
+ngb-carousel .carousel-img-container>img {
+    height: 35vw;
+    width: 46vw;
 }
