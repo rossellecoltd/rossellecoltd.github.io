@@ -35,12 +35,13 @@ button {
 
 .title {
     text-align: center;
+    margin-right: 3vw;
 }
 
 .title h1 {
     font-weight: bolder;
     color: rgb(151, 71, 71);
-    font-size: 4vh;
+    font-size: 2.7vh;
     vertical-align: middle;
     margin: auto;
     line-height: 8vh;
@@ -48,10 +49,11 @@ button {
 
 .linkedin-icon-container {
     height: auto;
-    width: 7vh;
+    width: 8vh;
     margin: auto;
     padding-top: 0.5vh;
     padding-right: 2vw;
+    min-width: 30px;
 }
 
 .language-icons-container {
@@ -60,6 +62,7 @@ button {
     margin: auto;
     padding-top: 0.5vh;
     padding-right: 2vw;
+    min-width: 30px;
 }
 
 .logo-container img {
@@ -105,9 +108,9 @@ button {
     margin: auto;
     background-color: lightgray;
     height: 100%;
-    width: 20%;
-    min-width: 85px;
-    max-width: 160px;
+    width: 12%;
+    min-width: 45px;
+    max-width: 200px;
 }
 
 #email-icon {
