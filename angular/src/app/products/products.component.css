@@ -16,10 +16,15 @@
     border-bottom: 1px solid lightgrey;
 }
 
-.pga-header h1 {
+.pga-header h1{
     font-weight: 400;
     color: rgb(80, 80, 80);
     font-size: 3vh;
+}
+
+.pga-badges img {
+    width: auto;
+    /* height: 7vh; */
 }
 
 .pga-detail {
@@ -51,6 +56,13 @@
     height: auto;
 }
 
+.pga-small-bag-icon {
+    float: left;
+    margin-right: 7%;
+}
+.pga-small-bag-icon mat-icon {
+    font-size: min(9vw, 60px);
+}
 .pga-description {
     font-size: 2vh;
     line-height: 2.1;

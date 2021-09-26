@@ -28,8 +28,8 @@ button {
 }
 
 .logo-container {
-    padding: 0% 3%;
-    height: 100%;
+    padding-left: 2.5vw;
+    height: 80%;
     margin: auto;
 }
 
@@ -41,7 +41,7 @@ button {
 .title h1 {
     font-weight: bolder;
     color: rgb(151, 71, 71);
-    font-size: 2.7vh;
+    font-size: max(2vw, 15px);
     vertical-align: middle;
     margin: auto;
     line-height: 8vh;
@@ -49,7 +49,7 @@ button {
 
 .linkedin-icon-container {
     height: auto;
-    width: 8vh;
+    width: max(5vh, 5%);
     margin: auto;
     padding-top: 0.5vh;
     padding-right: 2vw;
@@ -58,7 +58,7 @@ button {
 
 .language-icons-container {
     height: auto;
-    width: 7vh;
+    width: max(5vh, 5%);
     margin: auto;
     padding-top: 0.5vh;
     padding-right: 2vw;
@@ -66,7 +66,7 @@ button {
 }
 
 .logo-container img {
-    padding: 16% 0%;
+    padding: 10% 0%;
     height: 100%;
     width: auto;
 }
@@ -108,7 +108,7 @@ button {
     margin: auto;
     background-color: lightgray;
     height: 100%;
-    width: 12%;
+    width: min(20vw, 15%);
     min-width: 45px;
     max-width: 200px;
 }
