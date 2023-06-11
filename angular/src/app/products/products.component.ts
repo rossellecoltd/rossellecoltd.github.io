@@ -14,9 +14,13 @@ declare let gtag: Function
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent {
   private _language: string
-  private _product_carousel_images: Array<_CarouselImageStruct> = [
+  get language(): string {
+    return this._language
+  }
+
+  private _productCarouselImages: Array<_CarouselImageStruct> = [
     {
       url: '../../assets/carousel/product/pasta1.jpg',
       alt_text: 'pasta1'
@@ -34,6 +38,9 @@ export class ProductsComponent implements OnInit {
       alt_text: 'bread1'
     },
   ]
+  get productCarouselImages(): Array<_CarouselImageStruct> {
+    return this._productCarouselImages
+  }
 
   constructor(
     private router: Router,
@@ -48,24 +55,11 @@ export class ProductsComponent implements OnInit {
     })
 
     this._language = languageService.language
-
-    languageService.lang_publisher.subscribe(language => {
-      this._language = language
-    })
+    languageService.lang_publisher.subscribe(language => this._language = language)
 
     config.interval = 3000
     config.pauseOnHover = true
     config.keyboard = true
   }
 
-  ngOnInit(): void {
-  }
-
-  get language(): string {
-    return this._language
-  }
-
-  get product_carousel_images(): Array<_CarouselImageStruct> {
-    return this._product_carousel_images
-  }
 }

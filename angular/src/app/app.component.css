@@ -1,13 +1,13 @@
 .header {
     position: fixed;
-    z-index: 2563;
+    z-index: 800;
     background-color: gray;
     opacity: 1;
-    height: 14vh;
+    height: 72px;
 }
 
 .router-outlet {
-    padding-top: 15vh;
+    margin-top: 72px;
     width: 100%;
     height: 100%;
     overflow: scroll;
@@ -19,5 +19,5 @@
 }
 
 .footer {
-    height: 7vh;
+    height: 48px;
 }

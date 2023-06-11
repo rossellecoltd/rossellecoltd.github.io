@@ -1,23 +1,34 @@
 <div class="logo-head">
   <div class="logo-head-container">
+    <div class="menu-btn-container">
+      <button mat-icon-button [matMenuTriggerFor]="mainMenu" aria-label="Menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <mat-menu #mainMenu="matMenu">
+      <button mat-menu-item routerLink="products">{{language === 'th' ? 'สินค้าของเรา' : 'Our Products' }}</button>
+      <button mat-menu-item routerLink="about">{{language === 'th' ? 'เกี่ยวกับบริษัท' : 'About Us' }}</button>
+      <button mat-menu-item routerLink="contact">{{language === 'th' ? 'ติดต่อเรา' : 'Contact Us' }}</button>
+    </mat-menu>
+
     <div class="logo-container">
       <a routerLink="/">
         <img src="../../assets/rosselle.svg" alt="rosselle-logo">
       </a>
     </div>
     <div class="title">
-      <h1 class="mat-h1">ROSSELLE</h1>
+      <h1 class="mat-h1">Rosselle Co., Ltd.</h1>
     </div>
 
     <span class="fill-space"></span>
     <span flex></span>
-
-    <div class="language-icons-container">
-      <!-- PLACE LANGUAGE ICONS HERE -->
-      <img src="../../assets/us.svg" alt="en-us" (click)="changeLanguage('en')">
-    </div>
-    <div class="language-icons-container">
-      <img src="../../assets/thailand.svg" alt="th-th" (click)="changeLanguage('th')">
+    <div class="language-switcher-container">
+      <button mat-button class="language-switcher" (click)="changeLanguage(language === 'en' ? 'th' : 'en')">
+        {{language.toUpperCase()}}
+      </button>
+      <!-- <div class="language-switcher" (click)="changeLanguage(language === 'en' ? 'th' : 'en')">
+        {{ language.toUpperCase() }}
+      </div> -->
     </div>
 
     <div class="linkedin-icon-container">
@@ -33,16 +44,18 @@
     </div>
   </div>
 </div>
-
+<!-- 
 <div class="nav-bar">
   <mat-toolbar id="nav-toolbar">
     <div class="nav-toolbar-but-container">
       <button mat-button routerLink="products" *ngIf="language === 'en'">Products</button>
       <button mat-button routerLink="about" *ngIf="language === 'en'">About</button>
-      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);" *ngIf="language === 'en'">Contact</button>
+      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);"
+        *ngIf="language === 'en'">Contact</button>
       <button mat-button routerLink="products" *ngIf="language === 'th'">สินค้า</button>
       <button mat-button routerLink="about" *ngIf="language === 'th'">เกี่ยวกับบริษัท</button>
-      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);" *ngIf="language === 'th'">ติดต่อ</button>
+      <button mat-button routerLink="contact" style="background-color: rgba(122, 200, 222, 0.89);"
+        *ngIf="language === 'th'">ติดต่อ</button>
     </div>
   </mat-toolbar>
-</div>
+</div> -->

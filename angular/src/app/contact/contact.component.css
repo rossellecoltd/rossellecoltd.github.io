@@ -14,13 +14,19 @@ a {
 .contact-header h1 {
     font-family: Roboto;
     color: rgb(100, 100, 100);
-    font-size: 3vh;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
 }
 
 mat-icon {
     font-size: 50px;
     display: inline;
     color: darkblue;
+}
+
+.contact-detail-container {
+    margin-bottom: 32px;
 }
 
 .contact-detail-container div {
@@ -33,13 +39,6 @@ mat-icon {
     display: inline;
     font-family: Roboto;
     color: rgb(125, 125, 125);
-    font-size: 2vh;
+    font-size: 20px;
+    line-height: 24px;
 }
-
-/* .company-info p {
-    color: rgb(120, 120, 120);
-    font-family: Helvetica Neue, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 2.4;
-} */

@@ -17,9 +17,10 @@
 }
 
 .pga-header h1{
-    font-weight: 400;
+    font-weight: bold;
     color: rgb(80, 80, 80);
-    font-size: 3vh;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .pga-badges img {
@@ -58,14 +59,15 @@
 
 .pga-small-bag-icon {
     float: left;
-    margin-right: 7%;
+    margin-right: 20px;
 }
 .pga-small-bag-icon mat-icon {
-    font-size: min(9vw, 60px);
+    font-size: 28px;
+    line-height: 24px;
 }
 .pga-description {
-    font-size: 2vh;
-    line-height: 2.1;
+    font-size: 16px;
+    line-height: 28px;
     color: rgb(125, 125, 125);
     display: flex;
     justify-content: center;
@@ -82,18 +84,15 @@
 }
 
 .contact-us button {
-    font-size: 3vh;
-    height: 8vh;
-    line-height: 8vh;
-    width: 30vw;
-    min-width: 170px;
+    font-size: 16px;
+    height: 48px;
+    width: 200px;
     background-color: rgba(122, 200, 222, 0.89);
 }
 
 .contact-us button mat-icon {
-    width: inherit;
-    height: inherit;
-    font-size: 3vh;
+    font-size: 28px;
+    line-height: 20px;
 }
 
 ngb-carousel {

@@ -52,8 +52,8 @@
                 </div>
             </div>
             <div class="carousel-container">
-                <ngb-carousel *ngIf="product_carousel_images">
-                    <ng-template ngbSlide *ngFor="let image of product_carousel_images">
+                <ngb-carousel *ngIf="productCarouselImages">
+                    <ng-template ngbSlide *ngFor="let image of productCarouselImages">
                         <div class="carousel-img-container">
                             <img [src]="image.url" [alt]="image.alt_text">
                         </div>

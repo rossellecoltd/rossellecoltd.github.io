@@ -8,9 +8,10 @@
 }
 
 .company-name h1 {
-    font-weight: 400;
+    font-weight: bold;
     color: rgb(100, 100, 100);
-    font-size: 3vh
+    font-size: 30px;
+    line-height: 36px;
 }
 
 .company-info {
@@ -23,16 +24,17 @@
     color: rgb(120, 120, 120);
     font-family: Helvetica Neue, Arial, sans-serif;
     font-weight: 300;
-    font-size: 2vh;
-    line-height: 2.4;
+    font-size: 16px;
+    line-height: 40px;
 }
 
 .company-detail-table {
+    color: rgb(120, 120, 120);
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 3%;
     font-family: Roboto;
-    font-size: 1.7vh;
+    font-size: 16px;
 }
 
 .company-detail-table tr td {
@@ -65,16 +67,34 @@
     text-align: center;
 }
 
-ngb-carousel {
-    height: 35vw;
-    width: 46vw;
-    margin-top: 5%;
-    margin-left: 27.05%;
-    margin-bottom: 5%;
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    height: calc(640px * 3 / 4);
+    margin: auto;
+
+    .carousel-inner {
+        height: 100% !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 320px;
+        height: calc(320px * 3 / 4);
+    }
 }
 
+ngb-carousel {
+    width: 100%;
+    height: 100%;
+}
 
 ngb-carousel .carousel-img-container>img {
-    height: 35vw;
-    width: 46vw;
+    width: 100%;
+    height: 100%;
+}
+
+.company-detail-container {
+    margin-bottom: 32px;
 }
