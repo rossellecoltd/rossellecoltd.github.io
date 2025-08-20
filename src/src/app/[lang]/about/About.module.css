@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 160px 10vw 0 10vw;
+
+  .title {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #808080;
+  }
+
+  .body {
+    width: 80%;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5d5d5d;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+
+  :global(.ant-divider) {
+    margin: 32px 0
+  }
+
+  :global(.ant-carousel) {
+    margin-top: 32px;
+    width: 50vw;
+
+    :global(img) {
+      width: 50vw !important;
+    }
+  }
+
+  :global(.ant-descriptions) {
+    width: 100%;
+
+    :global(.ant-descriptions-title) {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+
+    :global(.ant-descriptions-item-label) {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
+
+  :global(img) {
+    position: unset !important;
+  }
+}
