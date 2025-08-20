@@ -1,0 +1,10 @@
+{
+  "title": "Contact us",
+  "phone": "<a href=\"tel:+6624104043\">+66 2410 4043</a>",
+  "email": "<a href=\"mailto:contact@rosselleth.com\">contact@rosselleth.com</a>",
+  "workingHour": {
+    "label": "Working hours",
+    "value": "Mon - Fri: 9:00 - 17:00"
+  },
+  "gladToHelp": "Do not hestitate to reach out for more detail regarding our products"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "ติดต่อเรา",
+  "phone": "<a href=\"tel:+6624104043\">02 410 4043</a>",
+  "email": "<a href=\"mailto:contact@rosselleth.com\">contact@rosselleth.com</a>",
+  "workingHour": {
+    "label": "เวลาทำการ",
+    "value": "จันทร์ - ศุกร์: 9:00 - 17:00"
+  },
+  "gladToHelp": "พวกเราพร้อมและยินดีที่จะให้คำปรึกษาหรือคำแนะนำเพิ่มเติมเกี่ยวกับสินค้าของเรา"
+}
