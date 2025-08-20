@@ -1,1 +1,0 @@
-export const tracking_id = 'UA-149907477-3'
