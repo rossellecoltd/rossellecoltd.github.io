@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[839],{3839:e=>{e.exports=JSON.parse('{"title":"บริษัท โรสเซลล์ จำกัด","subTitle":"ผู้นำเข้าวัตถุเจือปนอาหาร ด้วยประสบการณ์มากกว่า 15 ปี","gladToHelp":"เรายินดีที่ให้คำปรึกษา"}')}}]);
