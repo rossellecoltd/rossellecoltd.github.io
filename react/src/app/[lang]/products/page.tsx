@@ -29,7 +29,7 @@ const Product: React.FC<{
           <span>{t('details.general.description')}</span>
         </SplitterPanel>
         <SplitterPanel defaultSize="30%" max="50%" min="20%">
-          <Image className={styles.collapseImg} src="/rossellecoltd.github.io/assets/algae.jpg" alt="algae" fill />
+          <Image className={styles.collapseImg} src="/assets/algae.jpg" alt="algae" fill />
         </SplitterPanel>
       </Splitter>
     )
@@ -42,7 +42,7 @@ const Product: React.FC<{
           <span>{t('details.vsSodiumAlginate.description')}</span>
         </SplitterPanel>
         <SplitterPanel defaultSize="30%" max="50%" min="20%">
-          <Image className={styles.collapseImg} src="/rossellecoltd.github.io/assets/thickening.jpg" alt="thickening" fill />
+          <Image className={styles.collapseImg} src="/assets/thickening.jpg" alt="thickening" fill />
         </SplitterPanel>
       </Splitter>
     )
@@ -55,7 +55,7 @@ const Product: React.FC<{
           <span>{t('details.beer.description')}</span>
         </SplitterPanel>
         <SplitterPanel defaultSize="30%" max="50%" min="20%">
-          <Image className={styles.collapseImg} src="/rossellecoltd.github.io/assets/beer_foam.jpg" alt="beer" fill />
+          <Image className={styles.collapseImg} src="/assets/beer_foam.jpg" alt="beer" fill />
         </SplitterPanel>
       </Splitter>
     )
@@ -68,8 +68,8 @@ const Product: React.FC<{
           <span>{t('details.breadAndNoodles.description')}</span>
         </SplitterPanel>
         <SplitterPanel defaultSize="30%" max="50%" min="20%">
-          <Image className={styles.collapseImg} src="/rossellecoltd.github.io/assets/noodle.jpg" alt="noodle" fill />
-          <Image className={styles.collapseImg} src="/rossellecoltd.github.io/assets/bread.jpg" alt="bread" fill />
+          <Image className={styles.collapseImg} src="/assets/noodle.jpg" alt="noodle" fill />
+          <Image className={styles.collapseImg} src="/assets/bread.jpg" alt="bread" fill />
         </SplitterPanel>
       </Splitter>
     )
@@ -85,11 +85,11 @@ const Product: React.FC<{
     children: (
       <Space className={styles.certificationLogos}>
         <a href="https://porta.fda.moph.go.th/fda_search_all/PRODUCT/FRM_PRODUCT_FOOD.aspx?fdpdtno=1031964610002" target="_blank">
-          <Image src="/rossellecoltd.github.io/assets/thai_fda.jpg" alt="thai-fda-link" fill />
+          <Image src="/assets/thai_fda.jpg" alt="thai-fda-link" fill />
         </a>
         {/* Set style to align with extra space of halal icon */}
-        <Image style={{ marginLeft: '16px' }} src="/rossellecoltd.github.io/assets/FSSC.png" alt="fssc-22000" fill />
-        <Image src="/rossellecoltd.github.io/assets/halal_icon.png" alt="halal-icon" fill />
+        <Image style={{ marginLeft: '16px' }} src="/assets/FSSC.png" alt="fssc-22000" fill />
+        <Image src="/assets/halal_icon.png" alt="halal-icon" fill />
       </Space>
     )
   }, {
@@ -114,10 +114,10 @@ const Product: React.FC<{
       <Divider className={styles.divider} />
 
       <Carousel arrows autoplay>
-        <Image src="/rossellecoltd.github.io/assets/carousel/product/pasta1.jpg" alt="pasta1" fill />
-        <Image src="/rossellecoltd.github.io/assets/carousel/product/noodle1.jpg" alt="noodle1" fill />
-        <Image src="/rossellecoltd.github.io/assets/carousel/product/noodle2.jpg" alt="noodle2" fill />
-        <Image src="/rossellecoltd.github.io/assets/carousel/product/bread1.jpg" alt="bread1" fill />
+        <Image src="/assets/carousel/product/pasta1.jpg" alt="pasta1" fill />
+        <Image src="/assets/carousel/product/noodle1.jpg" alt="noodle1" fill />
+        <Image src="/assets/carousel/product/noodle2.jpg" alt="noodle2" fill />
+        <Image src="/assets/carousel/product/bread1.jpg" alt="bread1" fill />
       </Carousel>
 
       <Divider className={styles.divider} />

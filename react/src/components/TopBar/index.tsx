@@ -67,7 +67,7 @@ export default function TopBar({
       <Col className={styles.logoContainer} md={6} lg={5}>
         <Image
           className={styles.logo}
-          src="/rossellecoltd.github.io/assets/rosselle.svg"
+          src="/assets/rosselle.svg"
           alt="Rosselle"
           width={125}
           height={100 - 4 * 2}
