@@ -21,6 +21,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   distDir: "dist",
   output: "export",
+  basePath: '/rossellecoltd.github.io',
   images: { unoptimized: true }
 }
 
