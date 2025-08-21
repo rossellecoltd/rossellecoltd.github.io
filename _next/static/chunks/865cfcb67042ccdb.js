@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,56214,e=>{e.v(JSON.parse('{"title":"บริษัท โรสเซลล์ จำกัด","subTitle":"ผู้นำเข้าวัตถุเจือปนอาหาร ด้วยประสบการณ์มากกว่า 15 ปี","gladToHelp":"เรายินดีที่ให้คำปรึกษา"}'))}]);

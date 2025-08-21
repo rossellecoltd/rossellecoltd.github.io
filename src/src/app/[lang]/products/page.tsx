@@ -87,7 +87,8 @@ const Product: React.FC<{
         <a href="https://porta.fda.moph.go.th/fda_search_all/PRODUCT/FRM_PRODUCT_FOOD.aspx?fdpdtno=1031964610002" target="_blank">
           <Image src="/assets/thai_fda.jpg" alt="thai-fda-link" fill />
         </a>
-        <Image src="/assets/ISO_9001_2015.svg" alt="iso-9001-2015" fill />
+        {/* Set style to align with extra space of halal icon */}
+        <Image style={{ marginLeft: '16px' }} src="/assets/FSSC.png" alt="fssc-22000" fill />
         <Image src="/assets/halal_icon.png" alt="halal-icon" fill />
       </Space>
     )
@@ -107,9 +108,9 @@ const Product: React.FC<{
       <h2 className={styles.subTitle}>{t('subTitle')}</h2>
 
       <Divider className={styles.divider} />
-      
+
       <span className={styles.briefDescription}>{t('briefDescription')}</span>
-      
+
       <Divider className={styles.divider} />
 
       <Carousel arrows autoplay>

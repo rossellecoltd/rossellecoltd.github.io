@@ -2,13 +2,19 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 160px 10vw 0 10vw;
+  padding: 160px 10vw 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 160px 5vw 0;
+  }
 
   .title {
     font-size: 36px;
     line-height: 48px;
     font-weight: bold;
     color: #808080;
+
+    text-align: center;
   }
 
   .body {
@@ -28,8 +34,16 @@
     margin-top: 32px;
     width: 50vw;
 
+    @media screen and (max-width: 768px) {
+      width: 80vw;
+    }
+
     :global(img) {
       width: 50vw !important;
+
+      @media screen and (max-width: 768px) {
+        width: 80vw !important;
+      }
     }
   }
 

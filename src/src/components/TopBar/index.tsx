@@ -1,15 +1,15 @@
+import { InboxOutlined, InfoCircleOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons';
 import { Button, Col, Row } from 'antd'
 import Image from 'next/image';
+import { redirect } from 'next/navigation';
+import { useContext } from 'react';
 
 import { Menu } from '../Menu'
 
 import styles from './TopBar.module.css'
 import LanguageSwitcher from '../LanguageSwitcher';
-import { redirect } from 'next/navigation';
-import { useContext } from 'react';
-import ContactModalContext from '@/contexts/contact-modal.context';
-import { InboxOutlined, InfoCircleOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons';
 
+import ContactModalContext from '@/contexts/contact-modal.context';
 
 export default function TopBar({
   lang,
