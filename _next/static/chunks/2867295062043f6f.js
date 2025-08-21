@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,36919,e=>{e.v(JSON.parse('{"title":"Rosselle Co., Ltd.","subTitle":"Food additive importer with decades of experience in Thailand","gladToHelp":"We are looking to serve your needs"}'))}]);
